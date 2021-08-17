@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello World the social expirement NFT platform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Hello World NFTs" />
+    <meta property="og:image" content="./assets/cover.jpg" />
+    <meta property="og:description" content="Hello World the social expirement NFT platform" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Hello World NFTs" />
+    <meta name="twitter:description" content="Hello World the social expirement NFT platform" />
+    <meta name="twitter:image" content="./assets/cover.png" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="helloworld.news" />
+    <meta property="og:site_name" content="helloworld.news" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="ico">
+                <video playsinline="" autoplay="" muted="" loop="" poster="logo.mp4" id="bgvid">
+                    <source src="logo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://helloworld.news/#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://helloworld.news/#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="https://helloworld.news/#Resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:alert('pancakeswap listing Soon ...')" class="nav-link">Trade</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">App</a>
+                </li>
+            </ul>
+            <div class="mobile-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <h1 class="title">
+            <span id="typing"></span>
+        </h1>
+    </section>
+    <footer>
+        <h2>Hello World @2021</h2>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".mobile-btn");
+        const navMenu = document.querySelector(".nav-menu");
+        const links = document.querySelectorAll(".nav-link");
+
+        hamburger.addEventListener("click", mobileMenu);
+        links.forEach(r => r.addEventListener("click", mobileMenu))
+
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var options = {
+            strings: ["Coming Soon..."],
+            typeSpeed: 80,
+            backSpeed: 20,
+        };
+        var typed = new Typed('#typing', options);
+
+    </script>
+</body>
+
+</html>
